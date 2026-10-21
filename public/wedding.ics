@@ -1,0 +1,26 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Samantha and David//Wedding//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:wedding-2026-12-21@samantha-and-david
+DTSTAMP:20261021T000000Z
+DTSTART:20261221T100000Z
+DTEND:20261221T200000Z
+SUMMARY:Wedding of Samantha & David
+LOCATION:The Nest At Thirty\, 30 Domboshawa Rd\, Harare\, Zimbabwe
+DESCRIPTION:With joy\, we invite you to celebrate the wedding of Samantha & David.\n\nPlease be seated by 11:30 AM for a 12:00 PM start.\nDress code: formal\, ladies in rich shades of brown\, gentlemen in brown or classic black.\nBring your invitation code (DS + 4 digits) to the entrance.\n\nQuestions? Samantha +48 579 213 831 / David +48 739 439 598
+STATUS:CONFIRMED
+BEGIN:VALARM
+TRIGGER:-P7D
+ACTION:DISPLAY
+DESCRIPTION:Samantha & David's wedding is in one week
+END:VALARM
+BEGIN:VALARM
+TRIGGER:-P1D
+ACTION:DISPLAY
+DESCRIPTION:Samantha & David's wedding is tomorrow
+END:VALARM
+END:VEVENT
+END:VCALENDAR

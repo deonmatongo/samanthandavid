@@ -1,0 +1,4 @@
+node_modules
+.next
+data/guests.json
+.env.local
