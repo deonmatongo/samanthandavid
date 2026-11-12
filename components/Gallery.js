@@ -24,12 +24,13 @@ export default function Gallery() {
     <>
       <div className="polaroids">
         {PHOTOS.map((p, i) => (
-          <button key={p.src} className={`polaroid p${i}`} onClick={() => setOpen(i)} aria-label={`Enlarge: ${p.caption}`}>
+          <button key={p.src} className="polaroid" onClick={() => setOpen(i)} aria-label={`Enlarge: ${p.caption}`}>
             <img src={p.src} alt={p.alt} loading="lazy" />
             <span className="script">{p.caption}</span>
           </button>
         ))}
       </div>
+      <p className="gallery-hint">Swipe or scroll sideways →</p>
       {open !== null && (
         <div className="lightbox" onClick={() => setOpen(null)} role="dialog" aria-modal="true">
           <button className="lb-nav prev" onClick={e => { e.stopPropagation(); setOpen((open + PHOTOS.length - 1) % PHOTOS.length); }} aria-label="Previous">‹</button>

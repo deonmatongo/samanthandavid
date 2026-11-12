@@ -137,15 +137,11 @@ h2 { font-size: clamp(2.2rem, 5vw, 3.4rem); color: var(--espresso); margin: .5re
 .demo-hint b { letter-spacing: .15em; }
 
 /* gallery */
-.polaroids { display: flex; justify-content: center; align-items: flex-start; gap: clamp(1rem, 3vw, 2.2rem); flex-wrap: wrap; margin-top: 3rem; }
-.polaroid { background: #fff; border: 0; padding: 12px 12px 0; width: min(300px, 80vw); cursor: zoom-in; box-shadow: 0 30px 50px -28px rgba(23,59,92,.55), 0 3px 10px rgba(23,59,92,.12); transition: transform .5s cubic-bezier(.2,.8,.2,1), box-shadow .5s; font: inherit; color: var(--mocha); }
+.polaroids { display: flex; align-items: flex-start; gap: 1.2rem; margin: 3rem auto 0; max-width: 680px; padding: 1.6rem; background: rgba(255,255,255,.55); border: 1px solid rgba(23,59,92,.15); box-shadow: 0 20px 50px -30px rgba(23,59,92,.5); overflow-x: auto; scroll-snap-type: x mandatory; -webkit-overflow-scrolling: touch; scrollbar-width: thin; }
+.polaroid { flex: 0 0 auto; scroll-snap-align: center; background: #fff; border: 0; padding: 12px 12px 0; width: min(280px, 72vw); cursor: zoom-in; box-shadow: 0 14px 30px -18px rgba(23,59,92,.55), 0 2px 8px rgba(23,59,92,.12); font: inherit; color: var(--mocha); }
 .polaroid img { display: block; width: 100%; aspect-ratio: 2 / 3; object-fit: cover; }
 .polaroid .script { display: block; font-size: 1.7rem; line-height: 1; padding: 1rem 0 1.1rem; }
-.polaroid.p0 { transform: rotate(-3deg) translateY(18px); }
-.polaroid.p1 { transform: rotate(1.5deg); }
-.polaroid.p2 { transform: rotate(3deg) translateY(26px); }
-.polaroid:hover { transform: rotate(0) translateY(-10px) scale(1.03); box-shadow: 0 44px 60px -28px rgba(23,59,92,.6); z-index: 2; }
-@media (max-width: 700px) { .polaroid.p0, .polaroid.p1, .polaroid.p2 { transform: none; } .polaroid.p1 { transform: rotate(1deg); } }
+.gallery-hint { text-align: center; font-size: .72rem; letter-spacing: .25em; text-transform: uppercase; color: var(--mocha); margin-top: 1rem; }
 .lightbox { position: fixed; inset: 0; z-index: 200; background: rgba(16,38,58,.92); display: grid; place-items: center; padding: 1rem; animation: fadein .3s; }
 @keyframes fadein { from { opacity: 0; } }
 .lightbox figure { text-align: center; color: #eaf5ff; }

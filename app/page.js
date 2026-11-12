@@ -11,7 +11,6 @@ import AddToCalendar from '@/components/AddToCalendar';
 const stays = [
   { name: 'Tuli House Boutique Lodge', img: '/stays/tuli-house.jpeg', pos: '50% 70%', addr: '60 Knightsbridge Road, Harare', href: 'https://www.google.com/search?q=Tuli+House+Boutique+Lodge+Harare' },
   { name: '19 On Bay Noakes', img: '/stays/bay-noakes.jpeg', addr: '19 Bay Noakes Rd, Harare', href: 'https://www.google.com/search?q=19+On+Bay+Noakes+Harare' },
-  { name: 'Cresta Lodge Harare', img: '/stays/cresta-lodge.jpeg', addr: 'A5, Harare', href: 'https://www.google.com/search?q=Cresta+Lodge+Harare' },
 ];
 const details = [
   ['✦', 'Guests', 'As we are having an intimate celebration, we can only accommodate the guests named on the invitation. We kindly ask that no additional plus ones are added.'],
@@ -49,7 +48,7 @@ export default function Home() {
             <p className="hero-date">Monday, 21 December 2026</p>
             <p className="hero-place">The Nest At Thirty · Harare, Zimbabwe</p>
             <Countdown />
-            <a className="cta solid" href="#rsvp">RSVP</a>
+            <a className="cta solid" href="#rsvp">RSVP HERE</a>
           </div>
           <div className="photo-card">
             <img src="/hero.jpg" alt="Samantha and David holding hands beneath the trees" />
@@ -103,6 +102,17 @@ export default function Home() {
         </div>
       </section>
 
+      <section id="gifting" className="band center">
+        <div className="wrap">
+          <Reveal>
+            <div className="eyebrow">Gifting</div>
+            <h2>Your presence is the greatest gift</h2>
+            <p className="lead" style={{ marginBottom: '2rem' }}>Having you celebrate with us is the greatest gift of all. Should you wish to honour us, you are welcome to contribute towards our future together through a bank transfer or a cash gift. Any gesture, big or small, will be sincerely appreciated.</p>
+            <Gift />
+          </Reveal>
+        </div>
+      </section>
+
       <section id="travel">
         <div className="wrap">
           <Reveal className="center">
@@ -126,17 +136,6 @@ export default function Home() {
               </Reveal>
             ))}
           </div>
-        </div>
-      </section>
-
-      <section id="gifting" className="band center">
-        <div className="wrap">
-          <Reveal>
-            <div className="eyebrow">Gifting</div>
-            <h2>Your presence is the greatest gift</h2>
-            <p className="lead" style={{ marginBottom: '2rem' }}>Having you celebrate with us is the greatest gift of all. Should you wish to honour us, you are welcome to contribute towards our future together through a bank transfer or a cash gift. Any gesture, big or small, will be sincerely appreciated.</p>
-            <Gift />
-          </Reveal>
         </div>
       </section>
 
